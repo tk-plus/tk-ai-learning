@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: springAiLearning
+  ai:
+    openai:
+      api-key: ${DASHSCOPE_API_KEY}
+      base-url: https://api.deepseek.com
+      chat:
+        options:
+          model: deepseek-flash
+logging:
+  level:
+    org.springframework.ai: debug
